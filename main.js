@@ -53,8 +53,10 @@ function startAudio() {
 	
 	// Define a source sound file 
 	// You can replace this with your own file
-	audio.src = 'bird-whistling-a.wav'
+	// audio.src = 'bird-whistling-a.wav'
 	// audio.src = 'log-sine-sweep.wav'
+	// audio.src = 'spring.wav'
+	audio.src = 'mastermind-23.wav'
 
 	// Make a new analyser
 	analyser = audioContext.createAnalyser()
@@ -76,7 +78,7 @@ function startAudio() {
 // This function renders the audio to the canvas using a renderer
 function render() {
 
-	const centerX = 400 / 4
+	const centerX = 400 / 10
 	const centerY = 400 / 4
 	const radius = 400 / 8
 	analyser.getByteFrequencyData(frequencyArray)
