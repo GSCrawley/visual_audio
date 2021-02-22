@@ -12,8 +12,8 @@
 
 function render(frequencyArray, ctx, width, height) {
 	// Clear the canvas
-	ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'
-	ctx.fillRect(0, 0, 300, 300)
+	ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'
+	ctx.fillRect(0, 0, 400, 400)
 	ctx.fill()
 
 	// calculate the number of lines and the step between each line
@@ -21,7 +21,7 @@ function render(frequencyArray, ctx, width, height) {
 	const step = width / bars
 	const colorStep = 360 / bars
 
-	ctx.lineWidth = 3
+	ctx.lineWidth = 1
 
 	// Draw each bar in a color based on frequency
 	// Draws bars vertically like a graph
